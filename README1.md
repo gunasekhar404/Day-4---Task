@@ -15,15 +15,7 @@ IIFE :       (function(array){
                         } 
                    }
              })([1,2,3,4])
-             
-Arrow Function    oddNumbers = (array) => {
-                   for(var i = 0 ; i< array.length ; i++){
-                        if(array[i]%2!=0){
-                           console.log(array[i])
-                        } 
-                   }
-                        }
-                        
+                                 
 b) Convert all the strings to title caps in a string array
    
  anonymous :   function (str) {
@@ -40,13 +32,7 @@ IIFE : (function (str) {
                     } 
                     return str.join(' ');
                   })("MUDRA IS MY NAME");
- Arrow Function : titleCase = (str) => {
-                    str = str.toLowerCase().split(' ');
-                    for (var i = 0; i < str.length; i++) {
-                      str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
-                    } 
-                    return str.join(' ');
-                  }            
+             
 c) Sum of all numbers in an array 
 anonymous  :  function(array){
                   var sum = 0;
@@ -62,13 +48,7 @@ IIFE :       (function(array){
                    }
                    return sum;
              })([1,2,3,4])
-Arrow:       sum = (array)=>{
-             var sum = 0;
-                  for(var i = 0 ; i< array.length ; i++){
-                     sum = sum + array[i];
-                   }
-                   return sum;
-                   }
+
 d) Return all the prime numbers in an array
     Anonymous Function:
                  function(numArray){
@@ -91,18 +71,7 @@ d) Return all the prime numbers in an array
                       });
                       console.log(numArray);
                   })([1,2,3,4])
-    Arrow Function :
     
-       primeNumber = (numArray) => {
-                      numArray = numArray.filter((number) => {
-                        for (var i = 2; i <= Math.sqrt(number); i++) {
-                          if (number % i === 0) return false;
-                        }
-                        return true;
-                      });
-                      console.log(numArray);
-                  }
-                  
 e) Return all the palindromes in an array
 
 function isPalindrome(N)
@@ -145,19 +114,7 @@ function isPalindrome(N)
             return true;
         })([1,2,3] , 3)
 
-Arrow : 
-Palindrome = (arr, n) =>
-    {
-        // Traversing each element of the array
-        // and check if it is palindrome or not
-        for (let i = 0; i < n; i++)
-        {
-            let ans = isPalindrome(arr[i]);
-            if (ans == false)
-                return false;
-        }
-        return true;
-    }
+
 f) Return median of two sorted arrays of same size
 
 g) Remove duplicates from an Array
